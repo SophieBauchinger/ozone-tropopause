@@ -15,10 +15,6 @@ The ozone climatology is based on global soundings from 1980-2025 combined with 
    git clone [https://github.com/Sophie](https://github.com/SophieBauchinger/ozone-tropopause.git)
    cd ozone-tropopause
    ```
-2. Install dependencies
-   ```
-   pip install -r requirements.txt 
-   ```
 
 ### Usage
 To check that everything is working properly, run the following: `python tests.py `
