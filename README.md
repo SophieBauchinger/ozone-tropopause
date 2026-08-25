@@ -15,20 +15,26 @@ The ozone climatology is based on global soundings from 1980-2025 combined with 
 * matplotlib
 
 ### Installation (using pip)
-1. Clone the repository
+1. Navigate to where you would like to save it and clone the repository
    ```
+   cd [local-path-to-repo]
    git clone [https://github.com/Sophie](https://github.com/SophieBauchinger/ozone-tropopause.git)
    ```
-2. Install the project (in a virtual environment)
+2. (Optional) Create a virtual environment and activate it
    ```
-   python -m build
+   python -m venv ozoneTPvenv
+   ozoneTPvenv\Scripts\activate
+   ```
+3. Install the project
+   ```
+   pip install -e .
+   ```
+4. To check that everything is working properly, run the test script: 
+   ```
+   python o3_tropopause/tests.py
    ```
 
 ### Usage
-To check that everything is working properly, run the following: 
-```
-python tests.py
-```
 
 Import the main function into your python scripts with  
 ```
