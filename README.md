@@ -9,7 +9,7 @@ The ozone climatology is based on global soundings from 1980-2025 combined with 
 ### Prerequisites 
 * Python 3.8+
 * 
-### Installation (using pip)
+### Installation
 1. Clone the repository
    ```
    git clone [https://github.com/Sophie](https://github.com/SophieBauchinger/ozone-tropopause.git)
