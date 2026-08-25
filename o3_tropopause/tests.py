@@ -5,7 +5,7 @@ import random
 import numpy as np
 import xarray as xr
 
-from o3_chemical_tropopause import coord_val_from_O3
+from o3_tropopause import coord_val_from_O3
 
 N = int(1e4)
 o3_rand = [random.gauss(60,30)+(0 if i%3 else random.random()*800) for i in range(N)]
