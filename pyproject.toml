@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "dirty-tag"
+write_to = "src/esmae/_version.py"
+
+[project]
+name = "ozone-tropopause"
+dynamic = ["version"]
+description = "Ozone-based climatological tropopause-relative potential temperature coordinate"
+dependencies = [
+    "numpy",
+    "netcdf4",
+    "pandas",
+    "matplotlib",
+    "xarray",
+    ]
+authors = [{ name="'Sophie Bauchinger'", email="bauching@iau.uni-frankfurt.de" }]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+esmae = "esmae.cmd:main"
